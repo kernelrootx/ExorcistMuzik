@@ -103,7 +103,7 @@ f"""
 
 - /musicplayer [on / off]: müzik çaları Etkinleştir / devre dışı bırak
 - /admincache: grubunuzun yönetici bilgilerini günceller. Bot yönetici tarafından tanınmıyorsa deneyin
-- /userbotjoin: @{ASSISTANT_NAME} kullanıcısını sohbetinize davet edin
+- /asistanekle: @{ASSISTANT_NAME} kullanıcısını sohbetinize davet edin
 """,
 f"""
 **=>> Şarkı İndir 🎸**
@@ -122,7 +122,7 @@ f"""
 f"""
 **=>> Sudo kullanıcıları için komutlar:**
 
- - /userbotleaveall-Asistanı tüm sohbetlerden Kaldır
+ - /asistantamamencikar-Asistanı tüm sohbetlerden Kaldır
  - /broadcast <Mesaja cevap ver> - global olarak brodcast tüm sohbetlere mesaj yanıtladı
  - /pmpermit [açık/kapalı] - pmpermit mesajını Etkinleştir/devre dışı bırak
 *Sudo kullanıcıları herhangi bir gruptaki herhangi bir komutu çalıştırabilir
