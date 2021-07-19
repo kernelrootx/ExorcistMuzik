@@ -60,10 +60,10 @@ f"""
 **=>> Playback ⏯**
 
 - /player: Müzük Menüsü Açılır
-- /skip: Müzüği atlarsınız
-- /pause: Müzik durur
-- /resume: Müzik devam eder
-- /end: Durur medya lı müzik
+- /atla: Müzüği atlarsınız
+- /durdur: Müzik durur
+- /devam: Müzik devam eder
+- /bitir: Durur medya lı müzik
 - /current: Geçerli çalma parçasını gösterir
 - /playlist: Çalma listesini gösterir
 
