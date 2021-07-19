@@ -37,7 +37,7 @@ def init_instance(chat_id: int):
         queues.task_done(chat_id)
 
         if queues.is_empty(chat_id):
-            await stop(chat_id)
+            await durdur(chat_id)
         else:
             instance.input_filename = queues.get(chat_id)["file"]
 
@@ -63,8 +63,8 @@ async def start(chat_id: int):
     active_chats[chat_id] = {"playing": True, "muted": False}
 
 
-async def stop(chat_id: int):
-    await get_instance(chat_id).stop()
+async def durdur(chat_id: int):
+    await get_instance(chat_id).durdur()
 
     if chat_id in active_chats:
         del active_chats[chat_id]
