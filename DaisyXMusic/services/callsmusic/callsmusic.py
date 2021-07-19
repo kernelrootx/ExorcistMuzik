@@ -76,24 +76,24 @@ async def set_stream(chat_id: int, file: str):
     get_instance(chat_id).input_filename = file
 
 
-def pause(chat_id: int) -> bool:
+def durdur(chat_id: int) -> bool:
     if chat_id not in active_chats:
         return False
     elif not active_chats[chat_id]["playing"]:
         return False
 
-    get_instance(chat_id).pause_playout()
+    get_instance(chat_id).durdur_playout()
     active_chats[chat_id]["playing"] = False
     return True
 
 
-def resume(chat_id: int) -> bool:
+def devam(chat_id: int) -> bool:
     if chat_id not in active_chats:
         return False
     elif active_chats[chat_id]["playing"]:
         return False
 
-    get_instance(chat_id).resume_playout()
+    get_instance(chat_id).devam_playout()
     active_chats[chat_id]["playing"] = True
     return True
 
