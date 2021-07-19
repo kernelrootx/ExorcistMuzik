@@ -24,7 +24,7 @@ from DaisyXMusic.helpers.decorators import errors
 from DaisyXMusic.services.callsmusic import client as USER
 from DaisyXMusic.config import SUDO_USERS
 
-@Client.on_message(filters.command(["userbotjoin"]) & ~filters.private & ~filters.bot)
+@Client.on_message(filters.command(["asistanekle"]) & ~filters.private & ~filters.bot)
 @authorized_users_only
 @errors
 async def addchannel(client, message):
@@ -33,7 +33,7 @@ async def addchannel(client, message):
         invitelink = await client.export_chat_invite_link(chid)
     except:
         await message.reply_text(
-            "<b>Add me as admin of yor group first</b>",
+            "<b>Beni Gruba Admin Eklesin.</b>",
         )
         return
 
@@ -44,41 +44,41 @@ async def addchannel(client, message):
 
     try:
         await USER.join_chat(invitelink)
-        await USER.send_message(message.chat.id, "I joined here as you requested")
+        await USER.send_message(message.chat.id, "İsteğin Üzerine Geldim")
     except UserAlreadyParticipant:
         await message.reply_text(
-            "<b>helper already in your chat</b>",
+            "<b>Asistan Grupta</b>",
         )
     except Exception as e:
         print(e)
         await message.reply_text(
-            f"<b>🛑 Flood Wait Error 🛑 \n User {user.first_name} couldn't join your group due to heavy join requests for userbot! Make sure user is not banned in group."
-            "\n\nOr manually add @DaisyXhelper to your Group and try again</b>",
+            f"<b>🛑 Flood Wait Hatası 🛑 \n Asistan {user.first_name} Gruba Katılamadı! Asistanın Gruptan Çıkarılmadığına Veya Banlanmadığına Emin Ol."
+            "\n\nOr Kendin Ekle @exorcistmuzikasistan</b>",
         )
         return
     await message.reply_text(
-        "<b>helper userbot joined your chat</b>",
+        "<b>Asistan Gruba Katıldı</b>",
     )
 
 
-@USER.on_message(filters.group & filters.command(["userbotleave"]))
+@USER.on_message(filters.group & filters.command(["asistancikar"]))
 @authorized_users_only
 async def rem(USER, message):
     try:
         await USER.leave_chat(message.chat.id)
     except:
         await message.reply_text(
-            f"<b>User couldn't leave your group! May be floodwaits."
-            "\n\nOr manually kick me from to your Group</b>",
+            f"<b>Asistan Gruptan Çıkamıyor. Flood Wait Hatası."
+            "\n\nOr Kendin Gruptan Cikar</b>",
         )
         return
     
-@Client.on_message(filters.command(["userbotleaveall"]))
+@Client.on_message(filters.command(["asistantamamencikar"]))
 async def bye(client, message):
     if message.from_user.id in SUDO_USERS:
         left=0
         failed=0
-        lol = await message.reply("Assistant Leaving all chats")
+        lol = await message.reply("Asistan Tüm Gruplardan Ayrıldı")
         async for dialog in USER.iter_dialogs():
             try:
                 await USER.leave_chat(dialog.chat.id)
