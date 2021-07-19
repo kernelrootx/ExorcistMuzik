@@ -51,9 +51,9 @@ Get pyrogram (p)  `SESSION` from here:
 
 #### Sadece yöneticiler.
 - `/player ' - açık müzik çalar ayarları paneli
-- `/pause ' - şarkı çalmayı Duraklat
-- `/resume ' - şarkı çalmaya devam et
+- `/durdur ' - şarkı çalmayı Duraklat
+- `/devam ' - şarkı çalmaya devam et
 - '/atla ' - bir sonraki şarkıyı çal
-- '/end ' - müzik çalmayı Durdur
-- `/userbotjoin ' - asistanınızı sohbetinize davet edin
-- `/userbotleave ' - Asistanı sohbetinizden kaldırın
+- '/bitir ' - müzik çalmayı Durdur
+- `/asistanekle ' - asistanınızı sohbetinize davet edin
+- `/asistancikar ' - Asistanı sohbetinizden kaldırın
