@@ -1,9 +1,9 @@
 {
-  "name": "LoungeMusic",
+  "name": "ExorcistMuzik",
   "logo": "https://telegra.ph/file/3eb3a648f70c1f569ec82.jpg",
   "description": "Bu Bot Gruplanizda Rahatlikla Muzik dinlemeniz icin yapildi Sahibi Exorcist.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/kernelrootx/LoungeMusic",
+  "repository": "https://github.com/kernelrootx/ExorcistMuzik",
   "stack": "heroku-20",
   "buildpacks": [
    {
@@ -58,7 +58,7 @@
     "UPDATES_CHANNEL": {
       "description": "Güncelleme kanalını secin].",
       "required": false,
-      "value": "Loungeupdates"
+      "value": "ExorcistGüncelleme"
     },    
     "API_ID": {
       "description": "Api ıd nızı burdan alın my.telegram.org/apps",
