@@ -1,9 +1,9 @@
 {
   "name": "LoungeMusic",
-  "logo": "https://telegra.ph/file/03f1c9ec4513c3a52bc22.jpg",
-  "description": "Bu bot Gruplanizda Rahatlikla Muzik dinlemeniz icin yapildi Sahibi Bodrumlu.",
+  "logo": "https://telegra.ph/file/3eb3a648f70c1f569ec82.jpg",
+  "description": "Bu Bot Gruplanizda Rahatlikla Muzik dinlemeniz icin yapildi Sahibi Exorcist.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/bodrumlubebek/LoungeMusic",
+  "repository": "https://github.com/kernelrootx/LoungeMusic",
   "stack": "heroku-20",
   "buildpacks": [
    {
@@ -34,12 +34,12 @@
     "SUPPORT_GROUP": {
       "description": "bURAYA SUPPORT GRUBUNUZU GİRİN]",
       "required": false,
-      "value": "LoungeMusicsupport"
+      "value": "ExorcistMuzikDestek"
     },
     "PROJECT_NAME": {
       "description": "pROJE ISMINIZI GIRIN.",
       "required": false,
-      "value": "LoungeMusic v1"
+      "value": "ExorcistMuzik"
     },
     "ASSISTANT_NAME": {
       "description": "Asistanınızın Kullanıcı adını gırın @ sız.",
@@ -53,7 +53,7 @@
     "BG_IMAGE": {
       "description": "BG image of bot (Use transparent one) [IGNORE].",
       "required": false,
-      "value": " https://telegra.ph/file/03f1c9ec4513c3a52bc22.jpg"
+      "value": " https://telegra.ph/file/3eb3a648f70c1f569ec82.jpg"
     },     
     "UPDATES_CHANNEL": {
       "description": "Güncelleme kanalını secin].",
